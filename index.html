@@ -4,54 +4,54 @@
   
 
 
-  <!-- SEO / EEAT Meta Tags -->
+ <!-- SEO / EEAT Meta Tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Staking Polygon (POL) — Rewards, APY/APR, Validators, Calculator, Safety &amp; Troubleshooting (2026)</title>
-  <meta name="description" content="Staking Polygon (POL) guide (2026): how Polygon staking works, rewards and real yield, APY vs APR, how to stake step-by-step, validator list criteria, minimum POL, calculator framework, best practices, risks, safety checks, comparisons vs liquid staking, and troubleshooting. Includes KPIs, runbook, and a deep FAQ.">
+  <title>Scroll Swap — Best DEX Routes, Fees, Slippage, Popular Pairs & Troubleshooting (2026)</title>
+  <meta name="description" content="Scroll Swap guide (2026): how to swap tokens on Scroll safely, best DEX routing, fees (gas + LP + price impact), slippage settings, approvals hygiene, popular pairs (ETH/WETH, USDC, USDT, DAI, WBTC), step-by-step swaps, limit vs market swaps, MEV & protection tips, and troubleshooting for failed swaps. Includes checklists, tables, KPIs, and deep FAQ.">
   <meta name="author" content="Crypto Finance Experts">
-  <link rel="canonical" href="https://staking-polygon.example.com/">
+  <link rel="canonical" href="REPLACE_CANONICAL" />
 
-  <!-- Favicon (use your local file) -->
-  <link rel="icon" type="image/png" href="polygon-logo-png_seeklogo-527156.png">
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="scrollogo.jpg">
 
   <!-- Open Graph -->
   <meta property="og:type" content="article">
-  <meta property="og:url" content="https://staking-polygon.example.com/">
-  <meta property="og:title" content="Staking Polygon (POL) — Rewards, APY/APR, Validators, Calculator, Safety &amp; Troubleshooting (2026)">
-  <meta property="og:description" content="Practical Staking Polygon (POL) guide: rewards, APY/APR, validator selection, safety checklist, calculator framework, and troubleshooting.">
-  <meta property="og:image" content="cover.png">
+  <meta property="og:url" content="REPLACE_CANONICAL">
+  <meta property="og:title" content="Scroll Swap — Fees, Slippage, Popular Pairs, Best Routes & Fixes (2026)">
+  <meta property="og:description" content="Practical Scroll Swap guide: best routes, costs, slippage, approvals hygiene, and troubleshooting for failed swaps.">
+  <meta property="og:image" content="scroll.png">
 
   <!-- Twitter Card -->
   <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://staking-polygon.example.com/">
-  <meta property="twitter:title" content="Staking Polygon (POL) — Rewards, APY/APR, Validators, Calculator, Safety &amp; Troubleshooting (2026)">
-  <meta property="twitter:description" content="Deep Polygon staking guide: yield drivers, validator criteria, minimum POL, best practices, and risks in 2025–2026.">
-  <meta property="twitter:image" content="cover.png">
+  <meta property="twitter:url" content="REPLACE_CANONICAL">
+  <meta property="twitter:title" content="Scroll Swap — How to Swap Tokens Safely on Scroll (2026)">
+  <meta property="twitter:description" content="Deep Scroll swap guide: routing, fees, slippage settings, popular pairs, MEV notes, and common errors with fixes.">
+  <meta property="twitter:image" content="scroll.png">
 
   <style>
     :root{
-      /* Black–Purple Theme */
-      --primary:#A855F7;       /* purple-500 */
-      --primary-600:#9333EA;   /* purple-600 */
-      --primary-700:#7E22CE;   /* purple-700 */
-      --accent:#22D3EE;        /* cyan accent for tiny highlights */
+      /* Powder (Scroll-inspired) Theme */
+      --primary:#EC4899;        /* pink-500 */
+      --primary-600:#DB2777;    /* pink-600 */
+      --primary-700:#BE185D;    /* pink-700 */
+      --accent:#F59E0B;         /* amber accent */
 
-      --ink:#F8FAFC;           /* near-white text */
-      --muted:#A1A1AA;         /* zinc-400 */
-      --muted-2:#71717A;       /* zinc-500 */
+      --ink:#1F1720;            /* deep headline */
+      --muted:#4B3A45;          /* warm slate */
+      --muted-2:#7A626F;
 
-      --bg:#070712;            /* deep black/purple */
-      --panel:#0B0B18;
-      --panel-2:#0F0F24;
-      --line:rgba(255,255,255,.10);
+      --bg:#FFF7FB;             /* powder background */
+      --panel:#FFFFFF;
+      --panel-2:#FFF0F7;
+      --line:rgba(31,23,32,.12);
 
-      --ok:#22C55E;
-      --warn:#F59E0B;
-      --error:#EF4444;
+      --ok:#16A34A;
+      --warn:#D97706;
+      --error:#DC2626;
 
-      --shadow: 0 18px 44px rgba(0,0,0,.55);
+      --shadow: 0 18px 44px rgba(31,23,32,.10);
       --radius:14px;
       --radius-sm:10px;
       --radius-lg:22px;
@@ -66,16 +66,16 @@
       font-family: system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial, sans-serif;
       color:var(--muted);
       background:
-        radial-gradient(900px 600px at 15% 0%, rgba(168,85,247,.22), transparent 60%),
-        radial-gradient(900px 600px at 90% 10%, rgba(34,211,238,.10), transparent 60%),
-        radial-gradient(900px 600px at 55% 85%, rgba(126,34,206,.16), transparent 60%),
-        linear-gradient(180deg, #050510 0%, #070712 45%, #050510 100%);
+        radial-gradient(900px 600px at 12% 0%, rgba(236,72,153,.14), transparent 60%),
+        radial-gradient(900px 600px at 92% 10%, rgba(245,158,11,.10), transparent 60%),
+        radial-gradient(900px 600px at 50% 92%, rgba(190,24,93,.10), transparent 60%),
+        linear-gradient(180deg, #FFF7FB 0%, #FFEAF4 45%, #FFF7FB 100%);
       line-height:1.65;
       -webkit-font-smoothing:antialiased;
       -moz-osx-font-smoothing:grayscale;
     }
 
-    a{color:var(--primary); text-decoration:none}
+    a{color:var(--primary-700); text-decoration:none}
     a:hover{text-decoration:underline}
 
     img{max-width:100%; height:auto; display:block}
@@ -93,19 +93,20 @@
       padding-top:.6rem;
       border-top:1px solid var(--line);
     }
-    h3{font-size:clamp(1.05rem,2.2vw,1.3rem); color:#EDE9FE}
+    h3{font-size:clamp(1.05rem,2.2vw,1.3rem); color:#7A1840}
 
     p,li,td,th{font-size:1rem}
-    .lead{font-size:1.125rem; color:#E5E7EB}
+    .lead{font-size:1.125rem; color:#24141F}
     .muted{color:var(--muted)}
     .muted-2{color:var(--muted-2)}
+    .mini-text{font-size:.95rem;color:var(--muted-2)}
 
     header.hero{
       padding: clamp(2rem,6vw,4rem) 0;
       background:
-        radial-gradient(700px 420px at 18% 10%, rgba(168,85,247,.25), transparent 60%),
-        radial-gradient(700px 420px at 90% 20%, rgba(34,211,238,.12), transparent 60%),
-        linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,0) 55%);
+        radial-gradient(700px 420px at 18% 10%, rgba(236,72,153,.15), transparent 60%),
+        radial-gradient(700px 420px at 90% 20%, rgba(245,158,11,.10), transparent 60%),
+        linear-gradient(180deg, rgba(31,23,32,.03), rgba(31,23,32,0) 55%);
       border-bottom:1px solid var(--line);
     }
 
@@ -117,7 +118,7 @@
     }
 
     .hero-card{
-      background: linear-gradient(180deg, rgba(15,15,36,.82), rgba(11,11,24,.68));
+      background: linear-gradient(180deg, rgba(255,255,255,.92), rgba(255,240,247,.88));
       border:1px solid var(--line);
       border-radius:var(--radius-lg);
       padding:clamp(1rem,3vw,1.75rem);
@@ -131,40 +132,71 @@
       height:54px;
       border-radius:14px;
       border:1px solid var(--line);
-      background:rgba(255,255,255,.06);
+      background:rgba(236,72,153,.08);
       padding:.35rem;
       object-fit:contain;
-      box-shadow: 0 10px 22px rgba(0,0,0,.35);
+      box-shadow: 0 10px 22px rgba(31,23,32,.10);
       flex:0 0 auto;
     }
 
+    /* CTA — красивее и “кликабельнее” */
+    .cta-center{display:flex; justify-content:center; margin-top:1.05rem;}
     .cta{
-      display:inline-block;
-      margin-top:1rem;
-      background:linear-gradient(180deg, var(--primary), var(--primary-700));
-      color:white;
-      padding:.9rem 1.4rem;
-      border-radius:12px;
-      font-weight:900;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      width:min(560px, 100%);
+      padding:1.15rem 2.4rem;
+      border-radius:18px;
+      font-weight:950;
       letter-spacing:.2px;
-      box-shadow:0 14px 32px rgba(168,85,247,.28);
-      border:1px solid rgba(255,255,255,.10);
+      font-size:1.12rem;
+
+      color:#fff;
+      background:
+        linear-gradient(180deg, rgba(255,255,255,.22), rgba(255,255,255,0) 55%),
+        linear-gradient(180deg, var(--primary), var(--primary-700));
+      border: 2px solid rgba(255,255,255,.55);
+
+      box-shadow:
+        0 18px 44px rgba(236,72,153,.28),
+        0 0 0 10px rgba(236,72,153,.10);
+      text-decoration:none;
+
+      transform: translateZ(0);
+      transition: transform .18s ease, filter .18s ease, box-shadow .18s ease;
+      user-select:none;
+      cursor:pointer;
     }
-    .cta:hover{filter:brightness(1.05); text-decoration:none}
-    .cta.secondary{
-      background:transparent;
-      border:1px solid var(--line);
-      color:var(--ink);
-      margin-left:.75rem;
-      box-shadow:none;
+    .cta:hover{
+      text-decoration:none;
+      filter:brightness(1.05);
+      transform: translateY(-2px);
+      box-shadow:
+        0 24px 56px rgba(236,72,153,.32),
+        0 0 0 12px rgba(236,72,153,.12);
+    }
+    .cta:active{
+      transform: translateY(0px) scale(.995);
+      filter:brightness(.99);
+      box-shadow:
+        0 16px 40px rgba(236,72,153,.26),
+        0 0 0 10px rgba(236,72,153,.10);
+    }
+    .cta:focus-visible{
+      outline:none;
+      box-shadow:
+        0 24px 56px rgba(236,72,153,.30),
+        0 0 0 12px rgba(236,72,153,.14),
+        0 0 0 4px rgba(31,23,32,.18);
     }
 
     .note{
-      border-left:3px solid var(--primary);
+      border-left:3px solid var(--primary-700);
       padding:.75rem 1rem;
-      background:rgba(168,85,247,.10);
+      background:rgba(236,72,153,.07);
       border-radius:10px;
-      color:#E5E7EB;
+      color:#24141F;
     }
 
     .hero-media{
@@ -181,7 +213,7 @@
       max-height:520px;
       border-radius:var(--radius-lg);
       border:1px solid var(--line);
-      background:rgba(255,255,255,.04);
+      background:rgba(255,255,255,.92);
       box-shadow:var(--shadow);
       padding:.25rem;
     }
@@ -200,7 +232,7 @@
       max-height:420px;
       border-radius:var(--radius);
       border:1px solid var(--line);
-      background:rgba(255,255,255,.04);
+      background:rgba(255,255,255,.92);
       box-shadow:var(--shadow);
       padding:.25rem;
     }
@@ -208,31 +240,31 @@
     section.step-guide{padding: clamp(2rem,6vw,3.5rem) 0}
     .steps{display:grid; gap:var(--gap); grid-template-columns:1fr;}
     .step{
-      background:linear-gradient(180deg, rgba(15,15,36,.78), rgba(11,11,24,.62));
+      background:linear-gradient(180deg, rgba(255,255,255,.92), rgba(255,240,247,.88));
       border:1px solid var(--line);
       border-radius:var(--radius);
       padding:1.2rem;
-      box-shadow: 0 12px 26px rgba(0,0,0,.45);
+      box-shadow: 0 12px 26px rgba(31,23,32,.08);
       transition:transform .2s ease, box-shadow .2s ease;
     }
-    .step:hover{transform:translateY(-4px); box-shadow:0 18px 34px rgba(0,0,0,.55)}
+    .step:hover{transform:translateY(-4px); box-shadow:0 18px 34px rgba(31,23,32,.10)}
     .step .icon{
       width:54px;height:54px;border-radius:50%;
       display:inline-grid; place-items:center;
-      background:rgba(168,85,247,.18);
+      background:rgba(236,72,153,.12);
       margin-bottom:.6rem;
-      color:#EDE9FE;
+      color:#7A1840;
       font-weight:950;
-      border:1px solid rgba(255,255,255,.10);
+      border:1px solid rgba(31,23,32,.08);
     }
 
     main .card{
-      background:linear-gradient(180deg, rgba(15,15,36,.70), rgba(11,11,24,.58));
+      background:linear-gradient(180deg, rgba(255,255,255,.92), rgba(255,240,247,.88));
       border:1px solid var(--line);
       border-radius:var(--radius);
       padding:1.25rem;
       margin:1.25rem 0;
-      box-shadow: 0 12px 26px rgba(0,0,0,.45);
+      box-shadow: 0 12px 26px rgba(31,23,32,.08);
     }
 
     .grid-2{display:grid; gap:var(--gap); grid-template-columns:1fr;}
@@ -242,43 +274,41 @@
     }
     .pill{
       border:1px solid var(--line);
-      background:rgba(255,255,255,.05);
+      background:rgba(236,72,153,.06);
       padding:.4rem .65rem;
       border-radius:999px;
       font-weight:800;
-      color:#E5E7EB;
+      color:#24141F;
       box-shadow:none;
     }
 
     .toc{
       border:1px solid var(--line);
-      background:linear-gradient(180deg, rgba(168,85,247,.10), rgba(255,255,255,.02));
+      background:linear-gradient(180deg, rgba(236,72,153,.08), rgba(255,255,255,.88));
       border-radius:var(--radius);
       padding:1rem;
     }
-    .toc strong{color:#F1F5F9}
+    .toc strong{color:#1F1720}
     .toc ul{margin:.5rem 0 0; padding-left:1.1rem}
     .toc li{margin:.25rem 0}
-    .toc a{font-weight:800}
+    .toc a{font-weight:900}
 
     table{width:100%; border-collapse:collapse; overflow:hidden; border-radius:12px}
     th,td{padding:.9rem; border-bottom:1px solid var(--line)}
     th{
-      background:rgba(168,85,247,.10);
-      color:#F8FAFC;
+      background:rgba(236,72,153,.10);
+      color:#1F1720;
       text-align:left
     }
-    tr.highlight{background:rgba(168,85,247,.08)}
-    tr:hover{background:rgba(255,255,255,.03)}
-
-    .ok{color:var(--ok)} .warn{color:var(--warn)} .err{color:var(--error)}
+    tr.highlight{background:rgba(236,72,153,.07)}
+    tr:hover{background:rgba(31,23,32,.02)}
 
     .eeat{
-      background:linear-gradient(180deg, rgba(168,85,247,.10), rgba(255,255,255,.02));
+      background:linear-gradient(180deg, rgba(236,72,153,.08), rgba(255,255,255,.88));
       border:1px solid var(--line);
       border-radius:var(--radius);
       padding:1.25rem;
-      box-shadow: 0 12px 26px rgba(0,0,0,.45);
+      box-shadow: 0 12px 26px rgba(31,23,32,.08);
     }
 
     .faq-item{border-bottom:1px solid var(--line); padding: .9rem 0}
@@ -286,31 +316,11 @@
       all:unset; display:flex; justify-content:space-between; align-items:center;
       width:100%; cursor:pointer; padding:.3rem 0;
     }
-    .faq-button:focus-visible{outline:2px solid var(--primary)}
+    .faq-button:focus-visible{outline:2px solid var(--primary-700)}
     .faq-button h3{margin:0; font-weight:950}
     .faq-content{max-height:0; overflow:hidden; transition:max-height .25s ease}
     .faq-content.open{padding-top:.6rem}
-    .faq-plus{font-weight:950; color:#EDE9FE}
-
-    .cta-center{
-      display:flex;
-      justify-content:center;
-      margin-top: 1rem;
-    }
-    .cta-center .cta{margin-top:0}
-
-    .badge-row{
-      display:flex; flex-wrap:wrap; gap:.6rem;
-      margin:.9rem 0 0;
-    }
-    .badge{
-      border:1px solid var(--line);
-      background:rgba(34,211,238,.06);
-      padding:.35rem .6rem;
-      border-radius:999px;
-      font-weight:900;
-      color:#E5E7EB;
-    }
+    .faq-plus{font-weight:950; color:#7A1840}
 
     .callout-grid{
       display:grid;
@@ -319,7 +329,7 @@
       margin-top: .75rem;
     }
     .mini{
-      background:rgba(255,255,255,.03);
+      background:rgba(255,255,255,.88);
       border:1px solid var(--line);
       border-radius:var(--radius);
       padding:1rem;
@@ -329,9 +339,9 @@
       display:flex; flex-wrap:wrap; gap:.55rem; margin-top:.5rem;
     }
     .kpi-badges span{
-      border:1px solid rgba(168,85,247,.22);
-      background:rgba(168,85,247,.07);
-      color:#EDE9FE;
+      border:1px solid rgba(236,72,153,.22);
+      background:rgba(236,72,153,.08);
+      color:#1F1720;
       padding:.3rem .55rem;
       border-radius:999px;
       font-weight:900;
@@ -353,72 +363,71 @@
   <div class="container hero-grid">
     <div class="hero-card" aria-label="Intro">
       <div class="brand-row">
-        <img class="brand-logo" src="polygon-logo-png_seeklogo-527156.png" alt="Staking Polygon logo">
+        <img class="brand-logo" src="scrollogo.jpg" alt="Scroll logo">
         <div>
-          <div class="muted" style="font-weight:900; letter-spacing:.2px;">Operational Guide</div>
-          <div class="muted-2" style="font-size:.95rem;">Rewards • APY/APR • Validators • Calculator • Safety</div>
+          <div class="muted" style="font-weight:900; letter-spacing:.2px;">Operational Swap Guide</div>
+          <div class="muted-2" style="font-size:.95rem;">DEX Routes • Fees • Slippage • Approvals • Troubleshooting</div>
         </div>
       </div>
 
-      <h1>Staking Polygon (POL)</h1>
+      <h1>Scroll Swap</h1>
       <p class="lead">
-        This is a practical, security-first guide to <strong>Staking Polygon (POL)</strong>: how staking works end-to-end,
-        what drives rewards, how to compare <strong>APY vs APR</strong>, how to choose validators, how to estimate yield with
-        a calculator framework, and how to avoid the common mistakes that cause lost time (or lost funds).
+        This is a practical, safety-first guide to <strong>Scroll Swap</strong> in 2026:
+        how token swaps work on Scroll DEXs, how to pick the best route (direct vs multi-hop),
+        what you really pay in <strong>fees</strong> (gas + LP fee + price impact), how to set <strong>slippage</strong>,
+        how to manage <strong>approvals</strong> safely, and how to troubleshoot failed swaps.
       </p>
 
-
       <div class="cta-center">
-        <a href="https://staking-polygon.com/" class="cta" aria-label="Open Polygon Staking (placeholder)">Open Polygon Staking</a>
+        <a href="REPLACE_SWAP_URL" class="cta" target="_blank" rel="noopener nofollow" aria-label="Open Scroll Swap">
+          Open Scroll Swap
+        </a>
       </div>
 
       <div class="note" style="margin-top:1rem;">
-        <strong>Quick rule:</strong> If you’re staking meaningful size, do a small test delegation first,
-        then scale in. Staking is operational: validator choice, unbonding rules, and wallet hygiene matter.
+        <strong>Quick rule:</strong> If the quote looks “too good,” it’s usually price impact or a bad route. Check liquidity, slippage, and token contracts before confirming.
       </div>
     </div>
 
     <div class="hero-media" aria-hidden="true">
-      <!-- First top image -->
-      <img class="hero-img" src="snimok-ekrana-2022-01-25-v-16.10.24.png" alt="Staking Polygon overview visual">
+      <img class="hero-img" src="scroll.png" alt="Scroll Swap hero visual">
     </div>
   </div>
 </header>
 
 <section class="step-guide" aria-labelledby="how-works">
   <div class="container">
-    <h2 id="how-works">Staking Polygon (POL): How the Workflow Works (Choose → Delegate → Earn → Unstake)</h2>
+    <h2 id="how-works">Scroll Swap Workflow (Choose pair → Route → Quote → Slippage → Confirm → Verify)</h2>
     <div class="steps" role="list">
       <article class="step" role="listitem">
         <div class="icon">①</div>
-        <h3>Choose a staking method (native vs liquid staking)</h3>
+        <h3>Choose pair (and verify tokens)</h3>
         <p>
-          Decide if you want native delegation (more “direct”, but with lock/unbond rules) or liquid staking
-          (more flexibility, but extra smart-contract and peg/liquidity considerations).
+          Pick the token pair you need and verify contracts (especially stables and meme tokens).
+          Symbols are not identity.
         </p>
       </article>
       <article class="step" role="listitem">
         <div class="icon">②</div>
-        <h3>Select validators (the real risk/return lever)</h3>
+        <h3>Pick route (direct vs multi-hop)</h3>
         <p>
-          Your validator choice drives uptime risk, slashing exposure, commission drag, and reliability.
-          “Highest APY” is not a strategy if the operator is unstable or opaque.
+          A router may split across pools or go multi-hop (e.g., ETH→USDC→Token).
+          Better routing reduces price impact.
         </p>
       </article>
       <article class="step" role="listitem">
         <div class="icon">③</div>
-        <h3>Delegate and track rewards (net yield matters)</h3>
+        <h3>Set slippage & approvals</h3>
         <p>
-          Rewards are not just “APR”: net yield depends on commission, compounding cadence, and any extra
-          fees/constraints. Track realized outcomes, not only quotes.
+          Use realistic slippage. Approve only what you need (or revoke later) to reduce wallet risk.
         </p>
       </article>
       <article class="step" role="listitem">
         <div class="icon">④</div>
-        <h3>Unstake safely (timelines, claims, and mistakes)</h3>
+        <h3>Confirm & verify in explorer</h3>
         <p>
-          The exit path is part of the plan: understand unbonding delays, claim steps, and how long capital is illiquid.
-          Most “stuck” issues come from missing exit steps or network mismatch.
+          After the swap, confirm the tx status and token transfers in a Scroll explorer.
+          Wallet UIs can lag.
         </p>
       </article>
     </div>
@@ -428,484 +437,335 @@
 <main class="container" role="main">
 
   <section class="card toc" aria-label="Table of Contents">
-    <strong>On this page (Staking Polygon):</strong>
+    <strong>On this page (Scroll Swap):</strong>
     <ul>
-      <li><a href="#overview">Staking Polygon overview (what it is &amp; who it’s for)</a></li>
-      <li><a href="#rewards">Polygon staking rewards: what drives yield</a></li>
-      <li><a href="#apy-apr">Polygon staking APY / APR: how to compare correctly</a></li>
-      <li><a href="#how-to">How to stake Polygon (POL): step-by-step tutorial</a></li>
-      <li><a href="#calculator">Polygon staking calculator: estimation framework</a></li>
-      <li><a href="#validators">Polygon validator list: selection checklist</a></li>
-      <li><a href="#minimum">Polygon staking minimum POL required</a></li>
-      <li><a href="#yield">Polygon staking yield: compounding &amp; net return</a></li>
-      <li><a href="#review">Staking Polygon review: legit, trust, and what to watch</a></li>
-      <li><a href="#safety">Is staking Polygon safe? risks &amp; rewards</a></li>
-      <li><a href="#comparison">Staking Polygon comparison vs liquid staking</a></li>
-      <li><a href="#best-practices">Best way to stake Polygon: best practices</a></li>
-      <li><a href="#troubleshooting">Troubleshooting &amp; common issues</a></li>
-      <li><a href="#eeat">Sources &amp; references</a></li>
+      <li><a href="#overview">Scroll Swap overview (what it is & why it fails)</a></li>
+      <li><a href="#pairs">Most popular swap pairs on Scroll</a></li>
+      <li><a href="#fees">Fees explained: gas, LP fee, and price impact</a></li>
+      <li><a href="#slippage">Slippage: how to set it safely</a></li>
+      <li><a href="#stepbystep">How to swap on Scroll (step-by-step)</a></li>
+      <li><a href="#approvals">Approvals hygiene (allowances) & wallet safety</a></li>
+      <li><a href="#troubleshooting">Troubleshooting: failed swap fixes</a></li>
+      <li><a href="#eeat">Sources & references</a></li>
       <li><a href="#faq">FAQ</a></li>
     </ul>
   </section>
 
   <section class="card" id="overview">
-    <h2>Staking Polygon Overview: What It Is, and Why People Stake POL</h2>
+    <h2>Scroll Swap Overview: What “Swapping on Scroll” Really Means</h2>
     <p>
-      <strong>Staking Polygon (POL)</strong> generally means committing POL to help secure network operations (directly or via delegation),
-      earning rewards in return. The trade-off is simple: you exchange liquidity and operational attention
-      (validator selection + rules) for yield and network participation.
+      <strong>Scroll Swap</strong> means exchanging tokens on Scroll via DEX pools (AMMs) or routing aggregators.
+      Your outcome depends on liquidity, route quality, and slippage settings. The most common problems are not “DEX broken” —
+      they are <strong>low liquidity</strong>, <strong>too-tight slippage</strong>, <strong>bad token contracts</strong>, or <strong>unsafe approvals</strong>.
     </p>
 
     <div class="callout-grid" role="list">
       <div class="mini" role="listitem">
-        <h3>Best use-case</h3>
+        <h3>When Scroll Swap is best</h3>
         <p class="muted">
-          Long-term holders who want yield and can tolerate lock/unbond timelines.
+          You already have funds on Scroll and want cheaper, faster trading compared to L1.
         </p>
         <div class="kpi-badges">
-          <span>Long-term</span><span>Yield-focused</span><span>Risk-managed</span>
+          <span>Lower gas</span><span>Fast execution</span><span>On-chain routing</span>
         </div>
       </div>
 
       <div class="mini" role="listitem">
         <h3>Main constraints</h3>
         <p class="muted">
-          Unbonding delay, validator/operator risk, and the need for careful wallet hygiene.
+          Thin pools amplify price impact. Small cap tokens can require higher slippage and careful contract verification.
         </p>
         <div class="kpi-badges">
-          <span>Illiquidity</span><span>Operator risk</span><span>Process matters</span>
+          <span>Liquidity risk</span><span>Price impact</span><span>Token verification</span>
         </div>
       </div>
     </div>
 
     <div class="note" style="margin-top:1rem;">
-      <strong>Operational truth:</strong> the “best” staking setup is the one you can exit safely.
-      Always plan the unstake path before you stake.
+      <strong>Operational truth:</strong> A “good swap” is measured by (1) minimal price impact, (2) safe slippage, (3) verified token contract, and (4) controlled approvals.
     </div>
 
     <div class="content-media">
-      <!-- Second image -->
-      <img class="content-img" src="poly2.png" alt="Staking Polygon checklist visual">
+      <img class="content-img" src="sscroll1.png" alt="Scroll swap overview">
     </div>
   </section>
 
-  <section class="card" id="rewards">
-    <h2>Polygon Staking Rewards: What Drives Rewards and Why They Change</h2>
+  <section class="card" id="pairs">
+    <h2>Most Popular Scroll Swap Pairs (What People Actually Trade)</h2>
     <p>
-      <strong>Polygon staking rewards</strong> vary over time. Your realized outcome depends on network conditions and
-      your validator’s behavior (commission, uptime, performance), plus how you compound.
-    </p>
-    <ul>
-      <li><strong>Validator commission:</strong> your rewards are reduced by the operator’s cut.</li>
-      <li><strong>Uptime/performance:</strong> instability reduces rewards and can increase risk.</li>
-      <li><strong>Compounding cadence:</strong> auto-compound vs manual compounding changes net APY.</li>
-      <li><strong>Operational fees:</strong> some paths require extra transactions (claim/compound/unstake).</li>
-    </ul>
-
-    <div class="note">
-      <strong>Rule:</strong> Treat quoted yield as “gross”. Track net yield after commission + fees + missed time (downtime/unbond).
-    </div>
-  </section>
-
-  <section class="card" id="apy-apr">
-    <h2>Polygon Staking APY / APR: How to Compare Without Getting Tricked</h2>
-    <p>
-      <strong>APR</strong> is typically the “simple rate” (no compounding assumption).
-      <strong>APY</strong> includes a compounding assumption (and can be misleading if compounding isn’t realistic or fees are ignored).
+      These pairs cover the majority of swap intent on Scroll: base asset routing, stable conversions, and BTC exposure.
+      In practice, many routes go through a “hub asset” (ETH/WETH or USDC) for best liquidity.
     </p>
 
-    <table aria-label="APY vs APR comparison">
+    <table aria-label="Popular swap pairs on Scroll">
       <thead>
         <tr>
-          <th>Term</th>
-          <th>What it implies</th>
-          <th>Common mistake</th>
+          <th>Pair / Route</th>
+          <th>Why it’s popular</th>
+          <th>Notes</th>
         </tr>
       </thead>
       <tbody>
         <tr class="highlight">
-          <td>APR</td>
-          <td>Simple annual rate (no compounding)</td>
-          <td>Assuming APR = final outcome (it ignores compounding and fees)</td>
+          <td><strong>ETH ↔ WETH</strong></td>
+          <td>Wrapping/unwrapping for DeFi routing</td>
+          <td>Expect minimal price impact; verify wrapper contract</td>
         </tr>
         <tr>
-          <td>APY</td>
-          <td>Annualized rate with compounding assumption</td>
-          <td>Believing APY without checking compounding frequency + transaction costs</td>
+          <td><strong>ETH/WETH ↔ USDC</strong></td>
+          <td>Main “hub” pair for pricing and stable entry/exit</td>
+          <td>Often best liquidity; common aggregator route</td>
+        </tr>
+        <tr>
+          <td><strong>ETH/WETH ↔ USDT</strong></td>
+          <td>Alternative stable hub for trading</td>
+          <td>Verify stable contract identity</td>
+        </tr>
+        <tr>
+          <td><strong>USDC ↔ USDT</strong></td>
+          <td>Stable rotation and arbitrage routing</td>
+          <td>Low slippage usually, but depends on pool depth</td>
+        </tr>
+        <tr>
+          <td><strong>USDC ↔ DAI</strong></td>
+          <td>Lending/strategy stable conversions</td>
+          <td>Depth varies by DEX; route via ETH if needed</td>
+        </tr>
+        <tr>
+          <td><strong>ETH/WETH ↔ WBTC</strong></td>
+          <td>BTC exposure inside Scroll DeFi</td>
+          <td>Verify the exact WBTC representation & liquidity</td>
         </tr>
       </tbody>
     </table>
 
     <div class="note">
-      <strong>Quick check:</strong> If compounding requires frequent transactions, fees can erase the “APY gap” for small balances.
+      <strong>Route tip:</strong> If a direct pool is thin, use a hub route (Token → USDC → ETH/WETH → Token) to reduce price impact.
     </div>
   </section>
 
-  <section class="card" id="how-to">
-    <h2>How to Stake Polygon (POL): Tutorial (Clean, Repeatable Workflow)</h2>
+  <section class="card" id="fees">
+    <h2>Scroll Swap Fees Explained: Gas + LP Fee + Price Impact</h2>
+    <p>
+      Users often confuse “fees” with “LP fee.” Your all-in swap cost is usually:
+      <strong>gas</strong> (Scroll execution) + <strong>pool LP fee</strong> + <strong>price impact</strong> (slippage from liquidity depth).
+    </p>
+
+    <table aria-label="Swap cost model">
+      <thead>
+        <tr>
+          <th>Cost line</th>
+          <th>What it is</th>
+          <th>How to reduce it</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="highlight">
+          <td>Gas</td>
+          <td>Transaction fee on Scroll</td>
+          <td>Swap when network is calmer; avoid repeated failed attempts</td>
+        </tr>
+        <tr>
+          <td>LP fee</td>
+          <td>Pool fee paid to liquidity providers</td>
+          <td>Choose efficient pools/routers; compare quotes</td>
+        </tr>
+        <tr>
+          <td>Price impact</td>
+          <td>How much the swap moves the pool price</td>
+          <td>Use deeper pools; split orders; route through hub assets</td>
+        </tr>
+        <tr>
+          <td>MEV / execution risk</td>
+          <td>Bad fills in volatile/illiquid pairs</td>
+          <td>Avoid extreme slippage; use limit orders if available</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="note">
+      <strong>Rule:</strong> If price impact is large, your “fee” is liquidity — not gas. Reduce size or change route.
+    </div>
+  </section>
+
+  <section class="card" id="slippage">
+    <h2>Slippage on Scroll: How to Set It Safely</h2>
+    <p>
+      Slippage is your tolerance for price movement between quote and execution. Too low → swap fails.
+      Too high → you can get a worse fill than expected.
+    </p>
+
+    <table aria-label="Slippage suggestions">
+      <thead>
+        <tr>
+          <th>Market type</th>
+          <th>Typical slippage range</th>
+          <th>What to watch</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="highlight">
+          <td>Deep pairs (ETH/USDC, USDC/USDT)</td>
+          <td>Low</td>
+          <td>Should rarely fail; if it does, check congestion or route</td>
+        </tr>
+        <tr>
+          <td>Medium liquidity alt pairs</td>
+          <td>Moderate</td>
+          <td>Price impact can spike with size; split order if needed</td>
+        </tr>
+        <tr>
+          <td>Thin / volatile pairs</td>
+          <td>Higher (with caution)</td>
+          <td>High risk of bad fills; verify token contract & liquidity</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="note">
+      <strong>Safety rule:</strong> Don’t “solve failures” by setting extreme slippage. Fix the root cause: liquidity, route, or token mismatch.
+    </div>
+  </section>
+
+  <section class="card" id="stepbystep">
+    <h2>How to Swap on Scroll: Step-by-Step</h2>
     <ol>
-      <li><strong>Choose your method:</strong> native staking vs liquid staking (based on your liquidity needs).</li>
-      <li><strong>Prepare wallet hygiene:</strong> verify official URLs, consider hardware wallet for size, keep backups safe.</li>
-      <li><strong>Pick a validator:</strong> assess commission, uptime history, transparency, and operational reputation.</li>
-      <li><strong>Delegate a small test:</strong> verify rewards accrual and that you understand the UI and steps.</li>
-      <li><strong>Scale in:</strong> add stake in tranches to reduce operational mistakes.</li>
-      <li><strong>Track + compound:</strong> decide if compounding is worth it after fees.</li>
-      <li><strong>Plan your exit:</strong> know unbonding/claim rules before you need liquidity.</li>
+      <li><strong>Open a trusted Scroll DEX / aggregator:</strong> bookmark it.</li>
+      <li><strong>Connect wallet:</strong> confirm you’re on the Scroll network.</li>
+      <li><strong>Select tokens:</strong> verify token contract if it’s not a blue-chip.</li>
+      <li><strong>Review quote:</strong> check route, price impact, minimum received.</li>
+      <li><strong>Approve (if needed):</strong> prefer limited approvals for high-value wallets.</li>
+      <li><strong>Set slippage:</strong> use minimal viable tolerance.</li>
+      <li><strong>Confirm swap:</strong> keep tx hash and verify in explorer.</li>
     </ol>
 
     <div class="note">
-      <strong>Best way to stake Polygon:</strong> stable operational setup beats chasing the highest headline number.
-      Reliability + sane commission + safe process wins.
+      <strong>Best practice:</strong> For large swaps, consider splitting into tranches to reduce price impact and execution risk.
     </div>
   </section>
 
-  <section class="card" id="calculator">
-    <h2>Polygon Staking Calculator: A Practical Estimation Framework</h2>
-    <p>
-      A <strong>Polygon staking calculator</strong> should estimate your <em>net</em> outcome (not just a marketing APY).
-      Use this framework:
-    </p>
-
-    <table aria-label="Staking calculator inputs">
-      <thead>
-        <tr>
-          <th>Input</th>
-          <th>Meaning</th>
-          <th>Why it matters</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr class="highlight">
-          <td>Stake amount (POL)</td>
-          <td>Your principal</td>
-          <td>Determines if compounding fees are worth it</td>
-        </tr>
-        <tr>
-          <td>Gross APR</td>
-          <td>Network/validator rate before compounding</td>
-          <td>Baseline yield driver</td>
-        </tr>
-        <tr>
-          <td>Validator commission</td>
-          <td>Operator cut</td>
-          <td>Directly reduces rewards</td>
-        </tr>
-        <tr>
-          <td>Compounding frequency</td>
-          <td>Monthly/weekly/daily (if applicable)</td>
-          <td>Increases APY but may increase fees</td>
-        </tr>
-        <tr>
-          <td>Tx costs</td>
-          <td>Claim/compound/unstake fees</td>
-          <td>Can dominate small portfolios</td>
-        </tr>
-      </tbody>
-    </table>
-
-    <div class="note">
-      <strong>Calculator takeaway:</strong> For smaller balances, “set and forget” (no frequent compounding) often yields higher net results after fees.
-    </div>
-  </section>
-
-  <section class="card" id="validators">
-    <h2>Polygon Validator List: How to Choose the Right Validator</h2>
-    <p>
-      Instead of chasing “top APR”, evaluate validators like infrastructure providers.
-      A strong <strong>Polygon validator list</strong> checklist:
-    </p>
+  <section class="card" id="approvals">
+    <h2>Approvals Hygiene: How to Avoid Unsafe Allowances</h2>
     <ul>
-      <li><strong>Commission:</strong> reasonable and stable (avoid sudden spikes).</li>
-      <li><strong>Uptime &amp; reliability:</strong> consistent performance matters more than hype.</li>
-      <li><strong>Transparency:</strong> clear operator identity, documentation, and communication.</li>
-      <li><strong>Risk posture:</strong> sensible security practices and operational maturity.</li>
+      <li><strong>Prefer limited approvals:</strong> approve only what you intend to swap.</li>
+      <li><strong>Revoke stale allowances:</strong> periodically clean up old approvals.</li>
+      <li><strong>Separate wallets:</strong> “vault” wallet vs “interaction” wallet reduces blast radius.</li>
+      <li><strong>Never approve unknown contracts:</strong> verify you’re on the real DEX site.</li>
     </ul>
 
     <div class="note">
-      <strong>Heuristic:</strong> Pick validators you can explain in one sentence (who they are + why you trust their operations).
-    </div>
-  </section>
-
-  <section class="card" id="minimum">
-    <h2>Polygon Staking Minimum POL Required</h2>
-    <p>
-      The <strong>Polygon staking minimum POL required</strong> depends on the staking method and platform.
-      In practice, your “real minimum” is the amount where fees don’t crush net yield and you can still afford
-      exit transactions if needed.
-    </p>
-    <ul>
-      <li><strong>Hard minimum:</strong> varies by method/platform.</li>
-      <li><strong>Practical minimum:</strong> enough POL so periodic transactions (claim/compound/unstake) don’t eat yield.</li>
-      <li><strong>Safety minimum:</strong> keep extra for network fees and recovery actions.</li>
-    </ul>
-
-    <div class="note">
-      <strong>Rule:</strong> Always keep a gas buffer; being “all-in” is how people get stuck.
-    </div>
-  </section>
-
-  <section class="card" id="yield">
-    <h2>Polygon Staking Yield: How to Think About Net Returns</h2>
-    <p>
-      <strong>Polygon staking yield</strong> should be evaluated as <em>net</em> performance: rewards minus commissions minus fees,
-      adjusted for time locked/unbonded and any downtime.
-    </p>
-
-    <h3>Net yield checklist</h3>
-    <ul>
-      <li>Gross rewards earned</li>
-      <li>Minus validator commission</li>
-      <li>Minus transaction costs (claim/compound/unstake)</li>
-      <li>Minus “lost time” (unbonding delays / operational downtime)</li>
-    </ul>
-
-    <div class="note">
-      <strong>Best practice:</strong> Track realized outcomes quarterly. If net yield is not beating your alternative (or risk feels wrong), rotate strategy.
-    </div>
-  </section>
-
-  <section class="card" id="review">
-    <h2>Staking Polygon Review: Legit, Trust, and What to Watch (2025–2026)</h2>
-    <p>
-      A <strong>Staking Polygon review</strong> should focus on predictable outcomes and safety:
-      whether the process is understandable, the validator ecosystem is mature, and the “gotchas” are manageable.
-    </p>
-
-    <div class="callout-grid">
-      <div class="mini">
-        <h3>Staking Polygon legit?</h3>
-        <p class="muted">
-          Generally, staking as a mechanism is legitimate. Your real question is: <em>which method/provider</em> and
-          <em>which validator</em> are you trusting operationally.
-        </p>
-      </div>
-      <div class="mini">
-        <h3>Staking Polygon trust</h3>
-        <p class="muted">
-          Trust is earned via transparency: clear docs, known operators, consistent performance, and a clean exit path.
-        </p>
-      </div>
-    </div>
-
-    <div class="note">
-      <strong>2025 / 2026 lens:</strong> The market rewards operational discipline. Assume attackers target approvals, fake sites, and users rushing steps.
-    </div>
-  </section>
-
-  <section class="card" id="safety">
-    <h2>Staking Polygon Safe? Risks and Rewards (What Actually Matters)</h2>
-    <p>
-      “Safe” is not binary. <strong>Staking Polygon safe</strong> depends on method risk + validator/operator risk + user mistakes.
-      You can reduce risk dramatically with hygiene and conservative choices.
-    </p>
-
-    <h3>Key risks</h3>
-    <ul>
-      <li><strong>Smart-contract risk:</strong> higher with extra layers (some liquid staking designs).</li>
-      <li><strong>Validator/operator risk:</strong> downtime, poor ops, slashing exposure.</li>
-      <li><strong>Phishing/approval risk:</strong> fake UIs and bad approvals are top avoidable loss sources.</li>
-      <li><strong>Liquidity risk:</strong> you may not be able to exit instantly (unbonding / market liquidity).</li>
-    </ul>
-
-    <div class="note">
-      <strong>Hard rule:</strong> Use bookmarks for official sites, prefer minimal approvals, and keep a separate wallet for “daily” dApp usage if you’re staking meaningful size.
-    </div>
-  </section>
-
-  <section class="card" id="comparison">
-    <h2>Staking Polygon Comparison: Native Staking vs Liquid Staking</h2>
-    <p>
-      <strong>Staking Polygon vs liquid staking</strong> is a trade-off between simplicity and flexibility.
-      Choose based on your need for liquidity and your tolerance for extra smart-contract/market risks.
-    </p>
-
-    <table aria-label="Native vs Liquid staking">
-      <thead>
-        <tr>
-          <th>Dimension</th>
-          <th>Native delegation</th>
-          <th>Liquid staking</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr class="highlight">
-          <td>Liquidity</td>
-          <td>Lower (unbonding delays)</td>
-          <td>Higher (tokenized position, depends on market)</td>
-        </tr>
-        <tr>
-          <td>Complexity</td>
-          <td>Lower</td>
-          <td>Higher (contracts + peg/liquidity)</td>
-        </tr>
-        <tr>
-          <td>Risk surface</td>
-          <td>Validator/operator + protocol rules</td>
-          <td>Native risks + smart-contract + market liquidity risks</td>
-        </tr>
-      </tbody>
-    </table>
-
-    <div class="note">
-      <strong>Decision rule:</strong> If you need quick exits, liquid staking can help—but treat it like an additional layer of risk.
-    </div>
-  </section>
-
-  <section class="card" id="best-practices">
-    <h2>Best Way to Stake Polygon: Best Practices (Simple, High-Impact)</h2>
-    <ul>
-      <li><strong>Use a hardware wallet</strong> for meaningful amounts.</li>
-      <li><strong>Delegate in tranches</strong> (test small, then scale).</li>
-      <li><strong>Prefer reputable validators</strong> with stable commission and strong ops.</li>
-      <li><strong>Keep a gas buffer</strong> for claim/unstake/recovery actions.</li>
-      <li><strong>Review allowances periodically</strong> and revoke stale permissions.</li>
-      <li><strong>Track net yield</strong> (not just headline APY).</li>
-    </ul>
-
-    <div class="note">
-      <strong>Most common mistake:</strong> users optimize for +0.5% yield and ignore the 10× bigger risk: bad ops + bad security habits.
+      <strong>Rule:</strong> Unlimited approvals are fine until they’re not. High-value wallets should treat allowances like a risk budget.
     </div>
   </section>
 
   <section class="card" id="troubleshooting">
-    <h2>Staking Polygon Troubleshooting: Common Issues, Root Causes, Fixes</h2>
+    <h2>Scroll Swap Troubleshooting: Common Errors & Fixes</h2>
 
-    <h3>“Rewards not showing”</h3>
+    <h3>“Swap failed / reverted”</h3>
     <ul>
-      <li>You’re viewing the wrong network/account in the wallet.</li>
-      <li>Rewards accrue but require a claim/refresh action in the UI.</li>
-      <li>Validator has downtime or reporting lag—check on-chain data if available.</li>
+      <li>Slippage too low for volatility/price impact.</li>
+      <li>Insufficient gas or temporary congestion.</li>
+      <li>Pool liquidity changed between quote and execution.</li>
     </ul>
 
-    <h3>“Can’t unstake / withdraw”</h3>
+    <h3>“Insufficient output amount”</h3>
     <ul>
-      <li>Unbonding period is active (wait until it completes).</li>
-      <li>There is a claim/finalize step you haven’t executed.</li>
-      <li>You don’t have enough gas for the exit transaction.</li>
+      <li>Price moved; slippage too tight.</li>
+      <li>High price impact due to thin pool.</li>
+      <li>Try a different route or split the swap.</li>
     </ul>
 
-    <h3>“APY seems lower than expected”</h3>
+    <h3>“Token not showing after swap”</h3>
     <ul>
-      <li>Commission is higher than assumed.</li>
-      <li>Compounding is not happening (or fees make it not worth it).</li>
-      <li>Validator performance/uptime reduced realized rewards.</li>
+      <li>Wallet on wrong network.</li>
+      <li>Token not imported (add by contract address).</li>
+      <li>Check tx hash in explorer to confirm transfers.</li>
     </ul>
 
     <div class="note">
-      <strong>Best debugging method:</strong> verify state from the chain / official dashboards first, then UI second.
-      UI can lag; on-chain data is the source of truth.
+      <strong>Debugging rule:</strong> Explorer first. If the tx is successful, your funds are fine — it’s usually a display/network mismatch.
     </div>
   </section>
 
   <section class="eeat" id="eeat" aria-labelledby="eeat-title">
-    <h2 id="eeat-title">Staking Polygon: Authoritative Notes &amp; External References</h2>
+    <h2 id="eeat-title">Scroll Swap: Authoritative Sources & References (2026)</h2>
     <p>
-      Replace placeholder links with your chosen authoritative sources. Keep this block “clean” (official docs, reputable security resources,
-      and dashboards) to strengthen EEAT.
+      Keep this block clean with official chain resources, explorers, and security hygiene links. Replace placeholders with your chosen DEX references.
     </p>
 
-    <h3>Polygon / Staking</h3>
+    <h3>Scroll resources</h3>
     <ul>
-      <li><a href="#" target="_blank" rel="noopener nofollow">Polygon — Official Site</a></li>
-      <li><a href="#" target="_blank" rel="noopener nofollow">Polygon Staking — Official Docs</a></li>
-      <li><a href="#" target="_blank" rel="noopener nofollow">Polygon Validators — Explorer / Dashboard</a></li>
+      <li><a href="" target="_blank" rel="noopener nofollow">Scroll ecosystem / DEX list (official or curated)</a></li>
+      <li><a href="" target="_blank" rel="noopener nofollow">Scroll explorer</a></li>
     </ul>
 
     <h3>Security hygiene</h3>
     <ul>
-      <li><a href="https://ethereum.org/guides/how-to-revoke-token-access/" target="_blank" rel="noopener nofollow">Ethereum.org — Revoke Token Approvals</a></li>
-      <li><a href="https://revoke.cash/" target="_blank" rel="noopener nofollow">Revoke.cash — Allowance Management</a></li>
-      <li><a href="https://blog.openzeppelin.com/" target="_blank" rel="noopener nofollow">OpenZeppelin — Smart Contract Security</a></li>
-      <li><a href="https://consensys.io/blog" target="_blank" rel="noopener nofollow">Consensys — Security Research</a></li>
+      <li><a href="https://ethereum.org/guides/how-to-revoke-token-access/" target="_blank" rel="noopener nofollow">Ethereum.org — Revoke token approvals</a></li>
+      <li><a href="https://revoke.cash/" target="_blank" rel="noopener nofollow">Revoke.cash — Allowance management</a></li>
+      <li><a href="https://blog.openzeppelin.com/" target="_blank" rel="noopener nofollow">OpenZeppelin — Smart contract security</a></li>
+      <li><a href="https://consensys.io/blog" target="_blank" rel="noopener nofollow">Consensys — Security research</a></li>
     </ul>
 
     <div class="note">
-      <strong>About:</strong> Prepared by Crypto Finance Experts as a practical SEO-oriented knowledge base for <em>Staking Polygon (POL)</em>:
-      rewards, APY/APR, validators, calculator framework, safety, comparisons, and troubleshooting.
+      <strong>About:</strong> Prepared by Crypto Finance Experts as an SEO-oriented knowledge base for <em>Scroll Swap</em>: routing, fees, slippage, popular pairs, approvals hygiene, and troubleshooting.
     </div>
   </section>
 
   <section class="card faq-section" aria-labelledby="faq">
-    <h2 id="faq">Staking Polygon (POL): Frequently Asked Questions</h2>
+    <h2 id="faq">Scroll Swap: Frequently Asked Questions</h2>
 
     <div class="faq-item">
       <button class="faq-button" aria-expanded="false" aria-controls="f1" id="b1">
-        <h3>What is Staking Polygon (POL) and how does it work?</h3><span class="faq-plus">+</span>
+        <h3>What is Scroll Swap?</h3><span class="faq-plus">+</span>
       </button>
       <div id="f1" class="faq-content" role="region" aria-labelledby="b1">
-        <p><strong>Staking Polygon (POL)</strong> typically involves delegating POL to validators (or using a staking method that represents your stake) to earn rewards while supporting network operations.</p>
+        <p><strong>Scroll Swap</strong> is swapping tokens on the Scroll network using DEX liquidity pools or routing aggregators, typically to trade, enter/exit stablecoins, or interact with DeFi protocols.</p>
       </div>
     </div>
 
     <div class="faq-item">
       <button class="faq-button" aria-expanded="false" aria-controls="f2" id="b2">
-        <h3>Polygon staking rewards: what affects my yield?</h3><span class="faq-plus">+</span>
+        <h3>What are the most popular swap pairs on Scroll?</h3><span class="faq-plus">+</span>
       </button>
       <div id="f2" class="faq-content" role="region" aria-labelledby="b2">
-        <p>Your net yield depends on gross rate, validator commission, validator performance/uptime, compounding behavior, and transaction costs for claim/compound/unstake actions.</p>
+        <p>Most common: <strong>ETH/WETH</strong>, <strong>ETH/WETH↔USDC</strong>, <strong>ETH/WETH↔USDT</strong>, <strong>USDC↔USDT</strong>, <strong>USDC↔DAI</strong>, and <strong>ETH/WETH↔WBTC</strong> (depending on liquidity and representation).</p>
       </div>
     </div>
 
     <div class="faq-item">
       <button class="faq-button" aria-expanded="false" aria-controls="f3" id="b3">
-        <h3>Polygon staking APY / APR: which should I trust?</h3><span class="faq-plus">+</span>
+        <h3>Why did my swap fail?</h3><span class="faq-plus">+</span>
       </button>
       <div id="f3" class="faq-content" role="region" aria-labelledby="b3">
-        <p>APR is a simple rate; APY assumes compounding. Trust the number that matches your actual compounding cadence and includes fees/commission in the net estimate.</p>
+        <p>Common reasons: slippage too low, liquidity moved, price impact too high, not enough gas, or a route/pool issue. Start by checking the tx in the explorer.</p>
       </div>
     </div>
 
     <div class="faq-item">
       <button class="faq-button" aria-expanded="false" aria-controls="f4" id="b4">
-        <h3>How to stake Polygon (POL) safely?</h3><span class="faq-plus">+</span>
+        <h3>What slippage should I set?</h3><span class="faq-plus">+</span>
       </button>
       <div id="f4" class="faq-content" role="region" aria-labelledby="b4">
-        <p>Use official links (bookmarks), consider a hardware wallet for size, delegate a small test first, choose reputable validators, and keep a gas buffer for exits and recovery actions.</p>
+        <p>Use the lowest slippage that reliably executes. Deep pairs can use low tolerance; thin/volatile pairs may need more, but higher slippage increases risk of a worse fill.</p>
       </div>
     </div>
 
     <div class="faq-item">
       <button class="faq-button" aria-expanded="false" aria-controls="f5" id="b5">
-        <h3>Staking Polygon safe, legit, and trustworthy in 2026?</h3><span class="faq-plus">+</span>
+        <h3>Why don’t I see my token after swapping?</h3><span class="faq-plus">+</span>
       </button>
       <div id="f5" class="faq-content" role="region" aria-labelledby="b5">
-        <p>Staking as a mechanism can be legitimate, but outcomes depend on method/provider risk, validator quality, and user security hygiene. Treat phishing and approvals as the top avoidable risks.</p>
+        <p>Usually: wrong network selected, wrong wallet account, or token not imported by contract address. If the explorer shows success, the swap is done.</p>
       </div>
     </div>
 
     <div class="faq-item">
       <button class="faq-button" aria-expanded="false" aria-controls="f6" id="b6">
-        <h3>Polygon validator list: what matters most?</h3><span class="faq-plus">+</span>
+        <h3>How do I keep approvals safe?</h3><span class="faq-plus">+</span>
       </button>
       <div id="f6" class="faq-content" role="region" aria-labelledby="b6">
-        <p>Look for stable commission, strong uptime/performance, transparency, and operational reputation. Avoid unknown operators offering eye-catching headline rates.</p>
-      </div>
-    </div>
-
-    <div class="faq-item">
-      <button class="faq-button" aria-expanded="false" aria-controls="f7" id="b7">
-        <h3>Staking Polygon vs liquid staking: which is better?</h3><span class="faq-plus">+</span>
-      </button>
-      <div id="f7" class="faq-content" role="region" aria-labelledby="b7">
-        <p>Native staking is simpler but less liquid; liquid staking may be more flexible but adds smart-contract and market liquidity/peg risks. Choose based on your need for fast exits.</p>
-      </div>
-    </div>
-
-    <div class="faq-item">
-      <button class="faq-button" aria-expanded="false" aria-controls="f8" id="b8">
-        <h3>Polygon staking calculator: what inputs do I need?</h3><span class="faq-plus">+</span>
-      </button>
-      <div id="f8" class="faq-content" role="region" aria-labelledby="b8">
-        <p>Stake amount, gross APR, validator commission, compounding frequency, and transaction costs. The goal is a net yield estimate, not a marketing APY.</p>
-      </div>
-    </div>
-
-    <div class="faq-item">
-      <button class="faq-button" aria-expanded="false" aria-controls="f9" id="b9">
-        <h3>Why can’t I unstake or withdraw right now?</h3><span class="faq-plus">+</span>
-      </button>
-      <div id="f9" class="faq-content" role="region" aria-labelledby="b9">
-        <p>Most commonly: an unbonding period is still running, a claim/finalize step is required, or you lack gas for the exit transaction.</p>
+        <p>Prefer limited approvals, revoke old allowances periodically, avoid unknown sites, and use a separate interaction wallet for day-to-day DeFi.</p>
       </div>
     </div>
 
@@ -914,21 +774,41 @@
 </main>
 
 <footer class="container" role="contentinfo" style="padding:2rem 0; border-top:1px solid var(--line); margin-top:2rem">
-  <p class="muted">© 2026 Staking Polygon (POL) Guide. Educational content with safety-first operational focus.</p>
+  <p class="muted">© 2026 Scroll Swap Guide. Educational content with safety-first operational focus.</p>
 </footer>
 
+<script>
+  // FAQ accordion (accessible)
+  (function(){
+    var buttons = document.querySelectorAll('.faq-button');
+    buttons.forEach(function(btn){
+      btn.addEventListener('click', function(){
+        var controls = btn.getAttribute('aria-controls');
+        var panel = document.getElementById(controls);
+        if(!panel) return;
 
+        var isOpen = btn.getAttribute('aria-expanded') === 'true';
 
+        // close all
+        buttons.forEach(function(b){
+          b.setAttribute('aria-expanded','false');
+          var c = b.getAttribute('aria-controls');
+          var p = document.getElementById(c);
+          if(p){
+            p.style.maxHeight = null;
+            p.classList.remove('open');
+          }
+        });
 
+        if(!isOpen){
+          btn.setAttribute('aria-expanded','true');
+          panel.classList.add('open');
+          panel.style.maxHeight = panel.scrollHeight + 'px';
+        }
+      });
+    });
+  })();
+</script>
 
-
-
-
-
-
-
-
-
-
-
-</body></html>
+</body>
+</html>
