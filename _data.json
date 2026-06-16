@@ -1,0 +1,107 @@
+{
+ "keyword": "scroll swap",
+ "h1": "Scroll Swap",
+ "brand": "Scroll Swap",
+ "niche": "swap",
+ "verb": "Swap",
+ "title": "Scroll Swap - Open App",
+ "meta_description": "scroll swap opens a Scroll-network DEX route for wallet-based token trades, slippage review, and explorer verification before you sign.",
+ "palette": {
+  "mode": "light",
+  "bg": "#FFF4E8",
+  "accent": "#EBC48E",
+  "ink": "#111111"
+ },
+ "hero_h2": "Exchange tokens on Scroll with clear routing",
+ "hero_lead": "Scroll Swap sends users straight to a Scroll-native DEX flow where they can connect a wallet, choose a pair, review slippage, and confirm on-chain.",
+ "badge": "Scroll DEX",
+ "widget": {
+  "from": "ETH",
+  "from_net": "Scroll",
+  "to": "USDC",
+  "to_net": "Scroll",
+  "action": "Open Zebra App"
+ },
+ "trust": [
+  "Scroll Mainnet",
+  "Non-custodial",
+  "Slippage controls"
+ ],
+ "what_is": "Scroll Swap is an app-first route for exchanging tokens on Scroll through Zebra, a decentralized exchange built on Scroll. Scroll is EVM-compatible, so confirm network, token contracts, and transactions with <a href=\"https://scrollscan.com/\">Scrollscan</a> before signing.",
+ "how": [
+  {
+   "t": "Open the app",
+   "d": "Use the button to enter Zebra's trading interface from the verified destination."
+  },
+  {
+   "t": "Connect on Scroll",
+   "d": "Connect an EVM wallet and confirm it is set to Scroll Mainnet before selecting assets."
+  },
+  {
+   "t": "Choose the pair",
+   "d": "Pick the input and output tokens, then verify symbols against contract addresses when needed."
+  },
+  {
+   "t": "Review and confirm",
+   "d": "Check price impact, slippage, minimum received, approvals, and the final wallet prompt."
+  }
+ ],
+ "points": [
+  {
+   "h": "Built for Scroll liquidity",
+   "p": "Zebra's <a href=\"https://zebra.gitbook.io/zebra-document/overview/about-zebra\">docs</a> describe a permissionless DEX built on Scroll; the CTA opens its app for wallet-based trades."
+  },
+  {
+   "h": "Quote before signing",
+   "p": "Review amount out, route quality, price impact, slippage tolerance, and minimum received before approving token spending."
+  },
+  {
+   "h": "Verify on-chain",
+   "p": "After confirmation, use <a href=\"https://scrollscan.com/\">Scrollscan</a> to review status, token transfers, and contract addresses."
+  }
+ ],
+ "eeat": [
+  {
+   "text": "Zebra swap guide",
+   "url": "https://zebra.gitbook.io/zebra-document/v1-guide/how-to-swap"
+  },
+  {
+   "text": "Scroll developer docs",
+   "url": "https://docs.scroll.io/en/developers/"
+  },
+  {
+   "text": "Scrollscan explorer",
+   "url": "https://scrollscan.com/"
+  }
+ ],
+ "faq": [
+  {
+   "q": "What is scroll swap?",
+   "a": "scroll swap is the user intent to exchange tokens on Scroll; this page routes to Zebra's app for an on-chain DEX trade and keeps the key safety checks visible.",
+   "open": true
+  },
+  {
+   "q": "Is scroll swap the official Scroll app?",
+   "a": "No. Scroll is the network, and Zebra is a third-party DEX built on Scroll; verify <a href=\"https://app.zebra.xyz/\">app.zebra.xyz</a> before connecting a wallet.",
+   "open": false
+  },
+  {
+   "q": "Which wallet do I need for scroll swap?",
+   "a": "Use an EVM wallet set to Scroll Mainnet; Scroll docs list chain ID 534352 and ETH as the currency symbol.",
+   "open": false
+  },
+  {
+   "q": "Why can a scroll swap fail?",
+   "a": "Common causes are too little liquidity, tight slippage, price movement before execution, insufficient ETH for gas, or selecting the wrong token contract.",
+   "open": false
+  },
+  {
+   "q": "How should I check a scroll swap after signing?",
+   "a": "Open the transaction hash on Scrollscan and review the status, logs, and token transfers; wallet balances can lag behind the explorer.",
+   "open": false
+  }
+ ],
+ "official_url": "https://app.zebra.xyz/",
+ "official_domain": "app.zebra.xyz",
+ "footer_note": "Not the official app. Verify the destination domain before connecting a wallet; educational content, not financial advice."
+}
