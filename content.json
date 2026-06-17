@@ -1,0 +1,108 @@
+{
+  "key_facts": {
+    "Category": "Scroll decentralized exchange route",
+    "Network": "Scroll",
+    "Token": "No native swap token required",
+    "Custody": "Non-custodial wallet swaps",
+    "App route": "Zebra on Scroll"
+  },
+  "intent": [
+    {
+      "q": "Scroll Swap fees and slippage on Zebra",
+      "a": "Scroll Swap through Zebra can involve pool fees, price impact, token approval gas, and Scroll network gas. The fee a user feels most is often not the pool fee alone but the difference between expected output and minimum received after slippage. Scroll gas is paid in ETH on Scroll, so users need enough ETH on the network before trading. For smaller or less liquid pairs, price impact can dominate. Review the route, minimum received, slippage tolerance, and token contracts before signing the approval or swap."
+    },
+    {
+      "q": "Scroll Swap supported tokens and liquidity",
+      "a": "Scroll Swap demand usually means exchanging assets on Scroll rather than bridging to Scroll. Zebra is a Scroll-focused DEX, so token availability depends on pools deployed on Scroll and the app's routing. Common pairs may involve ETH, stablecoins, and ecosystem tokens, but symbols should always be checked against contract addresses. A token can exist on Scroll without having deep DEX liquidity. For larger swaps, compare output, price impact, and whether splitting the trade or using another Scroll DEX gives a better result."
+    },
+    {
+      "q": "Scroll Swap failed transaction",
+      "a": "A Scroll Swap transaction can fail because the wallet is on the wrong network, the account lacks ETH for gas, slippage is too tight, liquidity moved before execution, a token approval is missing, or the selected token contract is not the intended asset. A reverted transaction can still spend gas. Use the transaction hash on Scrollscan to confirm the status and logs. If the approval succeeded but the swap failed, the allowance may remain active, so review token approvals if you do not plan to retry."
+    },
+    {
+      "q": "Scroll Swap vs SyncSwap or other Scroll DEXs",
+      "a": "Zebra, SyncSwap, and other Scroll DEXs can show different prices because each has its own pools, fee tiers, liquidity depth, and route logic. The best DEX for one pair may not be best for another. Compare minimum received, price impact, gas, and token contract safety rather than assuming one app is always cheaper. For new Scroll tokens, liquidity can be fragmented, so a route that looks fine for a small trade may have high impact for a larger amount."
+    },
+    {
+      "q": "How to get ETH on Scroll before swapping",
+      "a": "To swap on Scroll, a wallet needs ETH on Scroll for gas. Users can bridge ETH from Ethereum through the official Scroll portal or use a supported third-party bridge or exchange withdrawal if available. After bridging, confirm the wallet network is Scroll and verify the ETH balance before trading. If the wallet has only the token being sold and no Scroll ETH, the swap cannot execute because the approval and trade still require gas."
+    }
+  ],
+  "compare": {
+    "title": "Zebra Scroll Swap vs other Scroll DEXs",
+    "rows": [
+      ["Dimension", "Zebra Scroll Swap", "Alternative"],
+      ["Primary fit", "Scroll-native DEX trading through Zebra", "Other Scroll DEXs may have different pools and incentives"],
+      ["Network", "Scroll", "Scroll, depending on the DEX"],
+      ["Quote quality", "Depends on Zebra pool depth and route", "Depends on each DEX's liquidity and routing"],
+      ["Best user", "Users who want a focused Scroll DEX interface", "Users comparing execution across multiple Scroll venues"]
+    ]
+  },
+  "faq": [
+    {
+      "q": "What is Scroll Swap?",
+      "a": "Scroll Swap is the search intent for exchanging tokens on the Scroll network. In this folder, the app route points to Zebra, a decentralized exchange built for Scroll. Users connect an EVM wallet on Scroll, choose a token pair, review the quote, and sign the swap transaction."
+    },
+    {
+      "q": "Is Scroll Swap the official Scroll bridge?",
+      "a": "No. Scroll Swap is a DEX swap flow on Scroll, while the official Scroll bridge moves assets between Ethereum and Scroll. Users who need gas or assets on Scroll may bridge first, then swap after the funds arrive on the Scroll network."
+    },
+    {
+      "q": "What gas token do I need for Scroll Swap?",
+      "a": "Scroll uses ETH as its gas token. Even if you are swapping a stablecoin or another ERC-20 token, the wallet needs enough ETH on Scroll to pay for token approvals and the swap transaction. Without Scroll ETH, the trade cannot be submitted."
+    },
+    {
+      "q": "Why is price impact high on Scroll Swap?",
+      "a": "High price impact usually means the selected pool does not have enough liquidity for the trade size or the route is inefficient. Try a smaller amount, a more liquid pair, or compare another Scroll DEX. Always review minimum received before signing because the final output can differ from the headline price."
+    },
+    {
+      "q": "How do I verify a Scroll Swap transaction?",
+      "a": "Copy the transaction hash from your wallet or the app and open it on Scrollscan. Check status, token transfers, contract addresses, and gas used. A wallet balance may lag briefly, but the explorer is the authoritative record for whether the transaction succeeded or reverted."
+    },
+    {
+      "q": "Can I swap any token on Scroll?",
+      "a": "No. A token must exist on Scroll and have usable liquidity in the selected DEX or route. Anyone can create tokens with familiar symbols, so verify the contract address before trading. If a pair has no route or extreme price impact, the market may be too thin to trade safely."
+    }
+  ],
+  "niche": {
+    "type": "swap",
+    "asset": "ETH",
+    "receive": "USDC",
+    "supported_networks": ["Scroll"]
+  },
+  "authority": [
+    {
+      "text": "Zebra overview",
+      "url": "https://zebra.gitbook.io/zebra-document/overview/about-zebra"
+    },
+    {
+      "text": "Zebra swap guide",
+      "url": "https://zebra.gitbook.io/zebra-document/v1-guide/how-to-swap"
+    },
+    {
+      "text": "Zebra app",
+      "url": "https://app.zebra.xyz/"
+    },
+    {
+      "text": "Zebra on DeFiLlama",
+      "url": "https://defillama.com/protocol/zebra"
+    },
+    {
+      "text": "Zebra GitHub",
+      "url": "https://github.com/zebra-xyz"
+    },
+    {
+      "text": "Scroll developer docs",
+      "url": "https://docs.scroll.io/en/developers/"
+    },
+    {
+      "text": "Scrollscan explorer",
+      "url": "https://scrollscan.com/"
+    }
+  ],
+  "sameAs": [
+    "https://x.com/ZebraProtocol",
+    "https://github.com/zebra-xyz",
+    "https://defillama.com/protocol/zebra"
+  ]
+}
