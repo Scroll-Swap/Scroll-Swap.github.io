@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
+
 Sitemap: https://scroll-swap.github.io/sitemap.xml
