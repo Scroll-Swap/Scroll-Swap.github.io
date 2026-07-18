@@ -1,0 +1,58 @@
+# Scroll Swap
+> Scroll Swap is Scroll’s official onchain automated market maker for exchanging tokens on Scroll; this independent dashboard provides information without executing trades or holding assets.
+
+## What is Scroll Swap
+Scroll Swap is a decentralized exchange created from Honeypop after its acquisition by Scroll. It uses concentrated-liquidity automated market maker pools to exchange assets directly on Scroll. Unlike a bridge, a swap changes the asset but not the network. Other Scroll DEXs have separate pools and routing, while this independent dashboard only explains and links to the underlying services.
+
+## How it works
+1. Connect a self-custody EVM wallet, switch to Scroll, and select the input and output tokens.
+2. The interface reads onchain pools and calculates a quote, route, price impact, and minimum output.
+3. For an ERC-20 input, authorize the router to spend the required amount; native ETH does not require an ERC-20 approval.
+4. Review the route, pool fee, gas estimate, and slippage limit, then sign the swap transaction.
+5. Scroll executes the router and pool calls atomically: the swap completes and output reaches the wallet, or the transaction reverts if its conditions cannot be met.
+
+## Key facts
+- Scroll Swap is an AMM-based decentralized exchange, not an order-book exchange or cross-chain bridge.
+- It operates on Scroll Mainnet, EVM chain ID `534352`.
+- ETH is Scroll’s native gas currency.
+- Fungible tokens generally use the ERC-20 interface and allowance model.
+- Scroll’s documentation identifies a Universal Router for Honeypop, the protocol reorganized as Scroll Swap.
+- Users retain wallet custody; assets move only through user-authorized smart-contract transactions.
+- Token availability depends on deployed contracts and active pool liquidity, not merely a displayed symbol.
+- A swap normally appears after Scroll transaction inclusion, while rollup finalization on Ethereum occurs later.
+- Total execution cost combines Scroll gas, the selected pool’s fee, price impact, and any adverse slippage.
+- Security depends on token contracts, router and pool contracts, wallet approvals, frontend integrity, Scroll’s sequencer, and rollup upgrade controls.
+
+## Common questions
+- **Is Scroll Swap safe?** It removes centralized-exchange custody but still carries smart-contract, malicious-token, liquidity, MEV, approval, frontend, and rollup risks. Verify the domain, chain, token addresses, quote, and transaction details.
+- **Does it take custody of funds?** No. The connected wallet signs transactions, and settlement occurs through onchain contracts.
+- **What fees apply?** Users pay Scroll gas in ETH plus the applicable pool fee; price impact and slippage can also reduce the received amount.
+- **How long does a swap take?** A successful swap usually appears within seconds after submission, although congestion, RPC problems, or replacement transactions can delay confirmation.
+- **Which assets and chains are supported?** Scroll Swap executes on Scroll Mainnet and can trade assets for which its interface and pools provide usable liquidity.
+- **How do I start?** Fund a compatible wallet on Scroll, retain ETH for gas, open the verified app, choose a pair, review the quote, approve if required, and confirm.
+- **What are the main failure causes?** Insufficient ETH, inadequate liquidity, expired quotes, restrictive slippage, incorrect network selection, token restrictions, allowance problems, or RPC instability.
+
+## App
+- Dashboard: https://scroll-swap.github.io/
+- App: https://scroll-swap.github.io/dashboard/
+
+## Official resources
+Scroll Swap: https://swap.scroll.io/
+Scroll Swap announcement: https://scroll.io/blog/were-acquiring-honeypop
+Scroll terms of service: https://scroll.io/terms-of-service
+Scroll documentation: https://docs.scroll.io/
+Network configuration: https://docs.scroll.io/en/developers
+DEX ecosystem and router references: https://docs.scroll.io/en/developers/developer-ecosystem/
+Official token list: https://github.com/scroll-tech/token-list
+Official bridge: https://portal.scroll.io/bridge
+Scroll source repositories: https://github.com/scroll-tech
+Scroll protocol audits: https://github.com/scroll-tech/scroll-audits
+Official X: https://x.com/Scroll_ZKP
+
+## Data & references
+Scrollscan explorer: https://scrollscan.com/
+L2BEAT Scroll assessment: https://l2beat.com/scaling/projects/scroll
+DeFiLlama Honeypop DEX data: https://defillama.com/protocol/honeypop-dex
+DeFiLlama Scroll data: https://defillama.com/chain/scroll
+CoinGecko Scroll data: https://www.coingecko.com/en/coins/scroll
+ERC-20 standard: https://eips.ethereum.org/EIPS/eip-20
