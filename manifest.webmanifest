@@ -1,0 +1,19 @@
+{
+  "name": "Scroll Swap",
+  "short_name": "Scroll Swap",
+  "description": "Scroll Swap is Scroll's official concentrated-liquidity DEX. How the AMM routes trades, what a swap costs, approval mechanics, and what to verify before signing.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "lang": "en",
+  "background_color": "#f5f6f8",
+  "theme_color": "#f5f6f8",
+  "icons": [
+    {
+      "src": "favicon.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
